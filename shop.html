@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fragrance - Free Perfume Shop Landing Page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="images/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&amp;family=Jost:wght@200;300;400;500&amp;display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #E4EDF1;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .product-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product-buttons button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: rgb(132, 132, 132);
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product-buttons button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="site-header text-black bg-primary sticky-top">
+        <nav id="header-nav" class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/main-logo.png" class="logo">
+                </a>
+                <button class="navbar-toggler d-flex d-lg-none order-3 p-2 border-0 shadow-none" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar"
+                    aria-labelledby="bdNavbarOffcanvasLabel">
+                    <div class="offcanvas-header px-4 pb-0">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/main-logo.png" class="logo">
+                        </a>
+                        <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                            aria-label="Close" data-bs-target="#bdNavbar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 gap-5 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link p-0 active" href="index.html#intro">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0" href="index.html#overview">Overview</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0" href="shop.html">Perfumes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0" href="index.html#company-services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0" href="index.html#faqs">Faqs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="products" class="section">
+        <h2>Our Products</h2>
+        <div class="product-buttons">
+            <button onclick="showProducts('women')">Women</button>
+            <button onclick="showProducts('men')">Men</button>
+        </div>
+
+        <div id="womenProducts" class="hidden">
+            <h3>Women Perfumes</h3>
+            <div class="product-grid">
+                <div class="product"><a href="product.html">
+                        <img src="images/w6.avif" alt="Perfume 3">
+                        <h3 style="color: black;">Perfume 1</h3>
+                        <p>Pkr 7000</p>
+                    </a>
+                </div>
+                <div class="product"><a href="product.html">
+                        <img src="images/w7.avif" alt="Perfume 3">
+                        <h3 style="color: black;">Perfume 2</h3>
+                        <p>Pkr 7000</p>
+                    </a>
+                </div>
+                <div class="product"><a href="product.html">
+                        <img src="images/w5.avif" alt="Perfume 3">
+                        <h3 style="color: black;">Perfume 3</h3>
+                        <p>Pkr 7000</p>
+                    </a>
+                </div>
+                <div class="product"><a href="product.html">
+                        <img src="images/w4.avif" alt="Perfume 3">
+                        <h3 style="color: black;">Perfume 4</h3>
+                        <p>Pkr 7000</p>
+                    </a>
+                </div>
+                <div class="product"><a href="product.html">
+                        <img src="images/w3.avif" alt="Perfume 3">
+                        <h3 style="color: rgb(20, 20, 20);">Perfume 5</h3>
+                        <p>Pkr 7000</p>
+                    </a>
+                </div>
+                <div class="product"><a href="product.html">
+                        <img src="images/w2.avif" alt="Perfume 3">
+                        <h3 style="color: black;">Perfume 6</h3>
+                        <p>Pkr 7000</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div id="menProducts" class="hidden">
+            <h3>Men Perfumes</h3>
+            <div class="product-grid">
+                <div class="product">
+                    <a href="product.html">
+                        <img src="images/5.jpg" alt="Perfume 1">
+                        <h3 style="color: black;">Perfume 1</h3>
+                        <p>Pkr 5000</p>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="product.html">
+                        <img src="images/7.jpg" alt="Perfume 1">
+                        <h3 style="color: black;">Perfume 1</h3>
+                        <p>Pkr 5000</p>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="product.html">
+                        <img src="images/4.jpg" alt="Perfume 1">
+                        <h3 style="color: black;">Perfume 1</h3>
+                        <p>Pkr 5000</p>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="product.html">
+                        <img src="images/1.jpg" alt="Perfume 1">
+                        <h3 style="color: black;">Perfume 1</h3>
+                        <p>Pkr 5000</p>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="product.html">
+                        <img src="images/5.jpg" alt="Perfume 1">
+                        <h3 style="color: black;">Perfume 1</h3>
+                        <p>Pkr 5000</p>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="product.html">
+                        <img src="images/7.jpg" alt="Perfume 1">
+                        <h3 style="color: black;">Perfume 1</h3>
+                        <p>Pkr 5000</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Boss</p>
+    </footer>
+    <script>
+        document.getElementById('nav-toggle').addEventListener('click', function () {
+            document.getElementById('nav-links').classList.toggle('open');
+        });
+
+        function showProducts(category) {
+
+            document.getElementById('womenProducts').classList.add('hidden');
+            document.getElementById('menProducts').classList.add('hidden');
+
+
+            document.getElementById(category + 'Products').classList.remove('hidden');
+        }
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</body>
+
+</html>

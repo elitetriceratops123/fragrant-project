@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Perfume Store</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&amp;family=Jost:wght@200;300;400;500&amp;display=swap" rel="stylesheet">
+    <style>
+        
+        .contact-info, .contact-form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #2d2b2b;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .contact-info h2, .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            text-align: center;
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        .contact-info p.email {
+            margin-top: 0;
+        }
+        .contact-info p.phone {
+            margin-bottom: 0;
+        }
+        .contact-info p a {
+            text-decoration: none;
+            color: #b2aaaa;
+        }
+        .contact-info p a:hover {
+            text-decoration: underline;
+        }
+        .contact-form .form-group {
+            margin-bottom: 15px;
+        }
+        .contact-form .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-form .form-group input, .contact-form .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #cccaca;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #928f8f;
+        }
+        .whatsapp {
+            text-align: left;
+           
+        }
+        .whatsapp img {
+            width: 70px;
+            height: 70px;
+            cursor: pointer;
+        }
+        .whatsapp img:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="site-header text-black bg-primary sticky-top">
+        <nav id="header-nav" class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/main-logo.png" class="logo">
+                </a>
+                <button class="navbar-toggler d-flex d-lg-none order-3 p-2 border-0 shadow-none" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar"
+                    aria-labelledby="bdNavbarOffcanvasLabel">
+                    <div class="offcanvas-header px-4 pb-0">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/main-logo.png" class="logo">
+                        </a>
+                        <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                            aria-label="Close" data-bs-target="#bdNavbar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 gap-5 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link p-0 active" href="index.html#intro">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0" href="index.html#overview">Overview</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0" href="shop.html">Perfumes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0" href="index.html#company-services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0" href="index.html#faqs">Faqs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>   
+   
+    <section id="contact" class="section">
+        <div class="contact-form">
+            <h2>Order Now</h2>
+            <form action="product.php" method="post">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter your first name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+                </div>
+                <div class="form-group">
+                    <label for="customer-email">Email Address</label>
+                    <input type="email" id="customer-email" name="customer-email" placeholder="Enter your email address">
+                </div>
+                <div class="form-group">
+                    <label for="customer-phone">Phone Number (WhatsApp)</label>
+                    <input type="text" id="customer-phone" name="customer-phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="4" placeholder="Enter your address"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p class="email">Email: <a href="mailto:za986137@gmail.com">za986137@gmail.com</a></p>
+            <p class="phone">Phone: <a href="tel:+923405052517">+923405052517</a></p>
+        </div>
+    </section>
+    <div class="position-sticky sticky-bottom">
+        <a href="https://wa.me/"><img src="images/w.webp" height="50px" alt="WhatsApp Logo"></a>
+    </div>
+    <script>
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('open');
+        });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</body>
+</html>
